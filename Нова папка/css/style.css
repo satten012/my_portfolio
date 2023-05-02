@@ -22,11 +22,11 @@
   align-items: center; 
 
 }
-.information__aboutDescriptionShowLetterText{
+.asffsafsa{
   display: none !important;
 }
 
-.information__aboutDescriptionShowLetter{
+.popup{
   color: wheat;
 }
 
@@ -73,16 +73,16 @@
   flex-direction: column;
 }
 
-.information__aboutPicImg {
+.picture {
   width: 40%;
   height: 100%;
   border-radius: 50%;
 }
 
-.information__aboutPicSmile {
+.pictureSmile {
   position: absolute;
 }
-.information__aboutPicImg > img {
+.picture > img {
   width: 105px;
   opacity: 1;
   display: block;
@@ -92,7 +92,7 @@
   animation-fill-mode: both;
 }
 
-.information__aboutPicSmile > img {
+.pictureSmile > img {
   width: 105px;
   opacity: 1;
   animation-name: showBlock;
@@ -163,7 +163,7 @@
   text-decoration: none;
 }
 
-.information__contactSection {
+.contact__my2 {
   height: 65%;
   width: 90%;
   display: flex;
@@ -192,7 +192,7 @@
   z-index: 3;
 }
 
-.content__timeInformation {
+.content__time {
   height: 34%;
   width: 97%;
   margin-left: 3%;
@@ -201,8 +201,8 @@
   align-items: center;
 }
 
-.content__timeInformationEncodingTime,
-.content__timeInformationDualGraphDisplay {
+.content__timeBlock1,
+.content__timeBlock2 {
   width: 48.5%;
   height: 100%;
   background: rgba(121, 126, 137, 0.12);
@@ -240,6 +240,9 @@
 .information__aboutName {
   height: 14.5%;
   width: 90%;
+
+}
+.asfasf124fsa{
 
 }
 
@@ -288,13 +291,13 @@ a > .fa-file {
   margin-top: 1px;
 }
 
-.information__contactHeader {
+.contact__my {
   height: 10%;
   width: 90%;
 }
 
-.information__skillsHeader,
-.information__contactHeader {
+.skills,
+.contact__my {
   height: 10%;
   width: 90%;
   color: #36bffa;
@@ -304,8 +307,8 @@ a > .fa-file {
   line-height: 24px;
 }
 
-.information__skillsHeaderSectionLeftSkillName > i,
-.information__skillsHeaderSectionRightSkillNema > i {
+.skills4 > i,
+.skills5 > i {
   padding-left: 5px;
   font-size: 16px;
 }
@@ -338,15 +341,15 @@ a > .fa-file {
   color: lightblue;
 }
 
-.information__skillsHeaderSection {
+.skills2 {
   font-family: "Inter";
   height: 71%;
   width: 90%;
   display: flex;
 }
 
-.information__skillsHeaderSectionLeft,
-.information__skillsHeaderSectionRight {
+.skills3,
+.skills6 {
   height: 100%;
   width: 50%;
 
@@ -362,17 +365,13 @@ a > .fa-file {
   font-family: "Inter";
 }
 
-.information__skillsHeaderSectionLeftSkillName,
-.information__skillsHeaderSectionRightSkillNema {
+.skills4,
+.skills5 {
   height: 19%;
   width: 100%;
 }
-#content__timeInformationEncodingTimeChartPerWeek{
-  height: 100%;
-}
 
-.content__timeInformationEncodingTimeHeader, 
-.content__timeInformationDualGraphDisplayHeader {
+.content__timeBlock1Content {
   height: 10%;
   width: 93.5%;
   margin: auto;
@@ -385,8 +384,7 @@ a > .fa-file {
   text-align: center;
 }
 
-.content__timeInformationEncodingTimeChart,
-.content__timeBlock1Chart1 {
+.content__timeBlock1Chart {
   height: 76%;
   width: 93.5%;
   margin: auto;
@@ -421,13 +419,13 @@ a > .fa-file {
   font-family: "Inter", sans-serif;
   position: relative;
 }
-.information__aboutDescriptionShowLetter {
+.popup {
   display: inline-block;
   cursor: pointer;
 }
 
 /* Фактическое всплывающее окно */
-.information__aboutDescriptionShowLetter .information__aboutDescriptionShowLetterAllText {
+.popup .popuptext {
   visibility: hidden;
   width: 800px;
   height: min-content!important;
@@ -445,10 +443,14 @@ a > .fa-file {
   padding: 15px;
   text-align: justify;
 }
+ .popuptext {
+  width: 800px;
+  height: min-content!important;
+}
 
 
 /* Переключите этот класс - скрыть и показать всплывающее окно */
-.information__aboutDescriptionShowLetter .show {
+.popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
@@ -610,7 +612,7 @@ transition-duration: 1.5s;
 }
 
 
-.information__aboutResumeIcon{
+.asfasfqa{
   color:#36bffa;
   text-align: center;
 }
@@ -741,13 +743,10 @@ transition-duration: 1.5s;
 }
 
 @media screen and (max-width: 1170px) {
-  .information__aboutPic > div:nth-child(3) {
-    top: 53px;
-}
   .textHidden{
     display: none;
   }
-  .content__timeInformationDualGraphDisplay {
+  .content__timeBlock2 {
     height: 233px;
     width: 340px;
     margin: auto;
@@ -755,7 +754,7 @@ transition-duration: 1.5s;
     left: 10px;
     bottom: 40px;
 }
-  .content__timeInformationEncodingTime {
+  .content__timeBlock1 {
     height: 233px;
     width: 340px;
     margin: auto;
@@ -799,7 +798,7 @@ transition-duration: 1.5s;
   .contnent{
     justify-content: flex-start;
   }
-  .content__timeInformation{
+  .content__time{
     margin-top: 10px;
   }
   #doughnut > span:nth-child(2) {
@@ -857,7 +856,7 @@ transition-duration: 1.5s;
     color: red;
     top: 74%;
   }
-  .content__timeInformation{
+  .content__time{
     height: 0;
   }
   .content__portfolio2Content{
@@ -875,7 +874,7 @@ transition-duration: 1.5s;
 }
 
 /*-- */
-.information__skillsSpinnerFirst {
+.spinner {
   width: 150px;
   height: 150px;
   text-align: center;
@@ -886,8 +885,8 @@ transition-duration: 1.5s;
   left: 0;
 }
 
-.information__skillsSpinnerFirstHtml,
-.information__skillsSpinnerFirstHtmlCss {
+.dot1,
+.dot2 {
   width: 50px;
   height: 50px;
   display: inline-block;
@@ -899,7 +898,7 @@ transition-duration: 1.5s;
   -webkit-animation: sk-bounce 2s infinite ease-in-out;
 }
 
-.information__skillsSpinnerFirstHtmlCss {
+.dot2 {
   top: auto;
   bottom: 0;
   -webkit-animation-delay: -1s;
@@ -922,7 +921,7 @@ transition-duration: 1.5s;
   }
 }
 
-.information__skillsSpinnerSecond {
+.spinner2 {
   width: 150px;
   height: 150px;
   position: absolute;
@@ -932,8 +931,8 @@ transition-duration: 1.5s;
   position: absolute;
 }
 
-.information__skillsSpinnerSecondJavaScript,
-.information__skillsSpinnerSecondGit {
+.dot3,
+.dot4 {
   width: 50px;
   height: 50px;
   display: inline-block;
@@ -945,7 +944,7 @@ transition-duration: 1.5s;
   -webkit-animation: sk-bounce2 2s infinite ease-in-out;
 }
 
-.information__skillsSpinnerSecondGit {
+.dot4 {
   top: auto;
   bottom: 0;
   -webkit-animation-delay: -1s;
@@ -968,7 +967,7 @@ transition-duration: 1.5s;
   }
 }
 
-.information__skillsSpinnerThird {
+.spinner3 {
   width: 150px;
   height: 150px;
   position: absolute;
@@ -978,8 +977,8 @@ transition-duration: 1.5s;
   position: absolute;
 }
 
-.information__skillsSpinnerThirdReact,
-.information__skillsSpinnerThirdSass {
+.dot5,
+.dot6 {
   width: 50px;
   height: 50px;
   display: inline-block;
@@ -991,7 +990,7 @@ transition-duration: 1.5s;
   -webkit-animation: sk-bounce3 2s infinite ease-in-out;
 }
 
-.information__skillsSpinnerThirdReact {
+.dot5 {
   top: auto;
   bottom: 0;
   -webkit-animation-delay: -1s;
@@ -1014,7 +1013,7 @@ transition-duration: 1.5s;
   }
 }
 
-.information__skillsSpinnerFourth {
+.spinner4 {
   width: 150px;
   height: 150px;
   position: absolute;
@@ -1022,12 +1021,10 @@ transition-duration: 1.5s;
   -webkit-animation: sk-rotate3 4s infinite linear;
   animation-delay: 1.9s;
   position: absolute;
-  bottom: 30px;
-  left: 20px;
 }
 
-.information__skillsSpinnerFourthThreeJs,
-.information__skillsSpinnerFourthChartJs {
+.dot7,
+.dot8 {
   width: 50px;
   height: 50px;
   display: inline-block;
@@ -1038,43 +1035,12 @@ transition-duration: 1.5s;
   -webkit-animation: sk-bounce3 2s infinite ease-in-out;
 }
 
-.information__skillsSpinnerFourthChartJs {
+.dot8 {
   top: auto;
   bottom: 0;
   -webkit-animation-delay: -1s;
   animation-delay: -1s;
 }
-
-.information__skillsSpinnerFifth {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  text-align: center;
-  -webkit-animation: sk-rotate3 3.5s infinite linear;
-  animation-delay: 1.9s;
-  position: absolute;
-  right: 15px;
-  top:0
-}
-.information__skillsSpinnerFifthChatGpt,
-.information__skillsSpinnerFifthGoogling {
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-  position: absolute;
-  color: rgba(0, 255, 0, 0.3);
-  font-size: 20px;
-  border-radius: 100%;
-  -webkit-animation: sk-bounce3 2s infinite ease-in-out;
-}
-
-.information__skillsSpinnerFifthChatGpt {
-  top: auto;
-  bottom: 0;
-  -webkit-animation-delay: -3s;
-  animation-delay: -3s;
-}
-
 
 @keyframes sk-rotate3 {
   100% {
@@ -1097,7 +1063,7 @@ transition-duration: 1.5s;
   height: 140px;
 }
 
-#content__timeInformationEncodingTimeChartPerWeek {
+#myChart {
   width: 100% !important;
   height: 100% !important;
   position: relative;
@@ -1175,7 +1141,7 @@ option {
   font-size: 16px !important;
 }
 
-.information__contactSection > div > a {
+.contact__my2 > div > a {
   color: white;
   text-decoration: none;
 }
@@ -1202,7 +1168,7 @@ input {
   margin-right: 5px;
 }
 
-.information__aboutPicTiny>img{
+.hidden>img{
   display: none;
 }
 
@@ -1290,7 +1256,7 @@ input {
   margin: auto;
   margin-top: 15px;
 }
-.information__aboutPicTiny > img{
+.hidden > img{
   display: block;
   width: 229px;
     height: 316px;
@@ -1299,7 +1265,7 @@ input {
     right: -63px;
     top: -26px;
 }
-.information__aboutPicSmile, .information__aboutPicImg{
+.pictureSmile, .picture{
   display: none;
 }
 
@@ -1320,7 +1286,7 @@ display: none;
 .information__aboutPic{
   height: 15%;
 }
-.content__timeInformationEncodingTime,.content__timeInformationDualGraphDisplay {
+.content__timeBlock1,.content__timeBlock2 {
   height: 283px;
   width: 500px;
   margin: auto;
@@ -1333,7 +1299,7 @@ display: none;
   margin: auto;
 }
 
-.content__timeInformationDualGraphDisplay{
+.content__timeBlock2{
   top: 369px;
 }
 #gauge{
@@ -1361,7 +1327,7 @@ display: none;
 .content__portfolio2 {
   max-width: 87vw!important;
 }
-.fa-brands, .fa-envelope, .fa-solid, .fa-message{
+.fa-brands, .fa-envelope, .fa-solid{
   display: none !important;
 }
 
@@ -1375,10 +1341,10 @@ display: none;
 .popup2{
   display: inline-block;
 }
-.information__aboutDescriptionShowLetter{
+.popup{
   color: transparent;
 }
-.information__aboutDescriptionShowLetterText{
+.asffsafsa{
   display: inline-block !important;
   color: wheat;
 }
@@ -1439,7 +1405,7 @@ display: none;
 
 
 
-.information__aboutPicTiny>img{
+.hidden>img{
 z-index: 0;
 }
 
@@ -1453,10 +1419,10 @@ z-index: 0;
 .information__about{
   width: 90vw;
 }
-.content__timeInformationEncodingTime{
+.content__timeBlock1{
   width: 90vw;
 }
-.content__timeInformationDualGraphDisplay{
+.content__timeBlock2{
   width: 90vw;
 }
 
@@ -1469,7 +1435,7 @@ z-index: 0;
 .content__portfolio2 {
   max-width: 87vw!important;
 }
-.information__aboutDescriptionSecondPatagraph{
+.asfasf124fsa{
   display: none;
 }
 }
@@ -1489,7 +1455,7 @@ z-index: 0;
     top: 325px;
     width: 45%;
 }
-.information__aboutDescriptionHidden{
+.asfhsa12sjkf{
   display: none;
 }
 
@@ -1512,12 +1478,12 @@ z-index: 0;
     margin: auto;
 }
 
-.content__timeInformationEncodingTime{
+.content__timeBlock1{
   height: 222px;
   top:29px;
 }
       
-.content__timeInformationDualGraphDisplay{
+.content__timeBlock2{
   top:582px
 }
 #gauge{
@@ -1535,7 +1501,7 @@ z-index: 0;
   margin-top: -3px;
   margin-right: 0;
 }
-.content__timeInformationDualGraphDisplay {
+.content__timeBlock2 {
   top: 286px;
   height: 222px
 }
@@ -1584,13 +1550,13 @@ z-index: 0;
 }
 
 
-.fa-envelope, .fa-mobile-screen-button, .fa-linkedin, .information__contactSection > div > a > i, .fa-telegram {
+.fa-envelope, .fa-mobile-screen-button, .fa-linkedin, .contact__my2 > div > a > i, .fa-telegram {
   font-style: italic !important;
   margin-right: 10px;
 
 }
 
-.information__contactSection>div{
+.contact__my2>div{
   font-style: italic !important; 
   -webkit-box-shadow: 10px 10px 5px -4px rgba(53,100,191,1);
 }
@@ -1603,7 +1569,7 @@ z-index: 0;
   color: #10A37F;
 }
 
-.information__aboutDescriptionShowLetterAllText{
+.popuptext{
   width: 160% !important;
 }
 

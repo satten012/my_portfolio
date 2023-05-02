@@ -1,11 +1,11 @@
-function showLetter() {
-  var popup = document.getElementById("information__aboutDescriptionShowLetterAllText");
+function myFunction() {
+  var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
 }
 
 // чарт бары с временем
 
-const ctx = document.getElementById("content__timeInformationEncodingTimeChartPerWeek");
+const ctx = document.getElementById("myChart");
 
 new Chart(ctx, {
   type: "bar",
