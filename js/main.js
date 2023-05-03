@@ -117,7 +117,7 @@ const legendMargin = {
 
 // чарт с проектами
 
-const ctx2 = document.getElementById("myChart2");
+const ctx2 = document.getElementById("content__timeInformationDualGraphDisplayContentPieChart");
 
 new Chart(ctx2, {
   type: "doughnut",
@@ -178,7 +178,7 @@ new Chart(ctx2, {
 
 // чарт с временем
 
-const ctx3 = document.getElementById("myChart3");
+const ctx3 = document.getElementById("content__timeInformationDualGraphDisplayContentChartSpeedometerChart");
 
 new Chart(ctx3, {
   type: "doughnut",

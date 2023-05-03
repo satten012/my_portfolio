@@ -386,7 +386,7 @@ a > .fa-file {
 }
 
 .content__timeInformationEncodingTimeChart,
-.content__timeBlock1Chart1 {
+.content__timeInformationDualGraphDisplayContent {
   height: 76%;
   width: 93.5%;
   margin: auto;
@@ -488,7 +488,7 @@ a > .fa-file {
   color: #f9fafb;
   font-family: "Inter";
 }
-#gauge > span:nth-child(2) {
+#content__timeInformationDualGraphDisplayContentChartSpeedometer > span:nth-child(2) {
   color: white;
   position: absolute;
   top: 64%;
@@ -498,7 +498,7 @@ a > .fa-file {
   font-size: 28px;
 }
 
-#gauge > span:nth-child(3) {
+#content__timeInformationDualGraphDisplayContentChartSpeedometer > span:nth-child(3) {
   color: white;
   position: absolute;
   top: 78%;
@@ -509,13 +509,13 @@ a > .fa-file {
   min-width: 79px;
 }
 
-#gauge {
+#content__timeInformationDualGraphDisplayContentChartSpeedometer {
   width: 38%;
   height: 74%;
   position: relative;
 }
 
-#gauge > div {
+#content__timeInformationDualGraphDisplayContentChartSpeedometer > div {
   display: flex;
   flex-direction: column;
   color: white;
@@ -524,15 +524,15 @@ a > .fa-file {
   top: 150px;
   min-width: 200px;
 }
-#gauge > div > span {
+#content__timeInformationDualGraphDisplayContentChartSpeedometer > div > span {
   padding-bottom: 10px;
 }
 
-#doughnut {
+#content__timeInformationDualGraphDisplayContentPie {
   width: 50%;
   height: 92%;
 }
-#doughnut > span:nth-child(2) {
+#content__timeInformationDualGraphDisplayContentPie > span:nth-child(2) {
   top: 53%;
   font-weight: 800;
   font-size: 28px;
@@ -542,7 +542,7 @@ a > .fa-file {
   position: absolute;
 }
 
-#doughnut > span:nth-child(3) {
+#content__timeInformationDualGraphDisplayContentPie > span:nth-child(3) {
   font-weight: 800;
   font-size: 16px;
   top: 64%;
@@ -691,15 +691,15 @@ transition-duration: 1.5s;
     padding-right: 10px;
   }
 
-  #doughnut {
+  #content__timeInformationDualGraphDisplayContentPie {
     width: 225px;
     height: 92%;
   }
-  #gauge > span:nth-child(2) {
+  #content__timeInformationDualGraphDisplayContentChartSpeedometer > span:nth-child(2) {
     font-size: 28px;
     top: 64%;
   }
-  #gauge {
+  #content__timeInformationDualGraphDisplayContentChartSpeedometer {
     width: 40% !important;
     height: 74%;
     position: relative;
@@ -710,7 +710,7 @@ transition-duration: 1.5s;
   .container{
     height:auto;
   }
-  #doughnut > span:nth-child(2) {
+  #content__timeInformationDualGraphDisplayContentPie > span:nth-child(2) {
     top: 53%;
     font-weight: 800;
     font-size: 26px;
@@ -718,23 +718,23 @@ transition-duration: 1.5s;
     transform: translate(-50%, -50%);
   }
 
-  #doughnut > span:nth-child(3) {
+  #content__timeInformationDualGraphDisplayContentPie > span:nth-child(3) {
     font-weight: 800;
     font-size: 14px;
     top: 64%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  #gauge {
+  #content__timeInformationDualGraphDisplayContentChartSpeedometer {
     width: 38%;
     height: 74%;
     position: relative;
   }
-  #gauge > span:nth-child(2) {
+  #content__timeInformationDualGraphDisplayContentChartSpeedometer > span:nth-child(2) {
     font-size: 23px;
     top: 64%;
   }
-  #doughnut {
+  #content__timeInformationDualGraphDisplayContentPie {
     width: 200px;
     height: 193px;
   }
@@ -802,7 +802,7 @@ transition-duration: 1.5s;
   .content__timeInformation{
     margin-top: 10px;
   }
-  #doughnut > span:nth-child(2) {
+  #content__timeInformationDualGraphDisplayContentPie > span:nth-child(2) {
     top: 61%;
     font-weight: 700;
     font-size: 26px;
@@ -810,17 +810,17 @@ transition-duration: 1.5s;
     transform: translate(-50%, -50%);
   }
 
-  #doughnut > span:nth-child(3) {
+  #content__timeInformationDualGraphDisplayContentPie > span:nth-child(3) {
     display: none;
   }
-  #doughnut {
+  #content__timeInformationDualGraphDisplayContentPie {
     width: 170px;
     height: 165px;
   }
-  #gauge > div {
+  #content__timeInformationDualGraphDisplayContentChartSpeedometer > div {
     top: 120px;
   }
-  #gauge > span:nth-child(3) {
+  #content__timeInformationDualGraphDisplayContentChartSpeedometer > span:nth-child(3) {
     display: none;
   }
   body {
@@ -852,7 +852,7 @@ transition-duration: 1.5s;
     width: 95%;
     height: 92%;
   }
-  #gauge > span:nth-child(2) {
+  #content__timeInformationDualGraphDisplayContentChartSpeedometer > span:nth-child(2) {
     font-size: 25px;
     color: red;
     top: 74%;
@@ -1103,18 +1103,18 @@ transition-duration: 1.5s;
   position: relative;
 }
 
-#myChart2 {
+#content__timeInformationDualGraphDisplayContentPieChart {
   width: 100% !important;
   height: 100% !important;
 }
 
-#myChart3 {
+#content__timeInformationDualGraphDisplayContentChartSpeedometerChart {
   width: 100% !important;
   height: 100% !important;
   position: relative;
   z-index: 9;
 }
-#myChart2{
+#content__timeInformationDualGraphDisplayContentPieChart{
   z-index: 9;
   position: relative;
 }
@@ -1179,7 +1179,7 @@ option {
   color: white;
   text-decoration: none;
 }
-#doughnut {
+#content__timeInformationDualGraphDisplayContentPie {
   position: relative;
 }
 
@@ -1336,24 +1336,24 @@ display: none;
 .content__timeInformationDualGraphDisplay{
   top: 369px;
 }
-#gauge{
+#content__timeInformationDualGraphDisplayContentChartSpeedometer{
   height: 86%;
   width: 41%;
   margin-left: 30px;
 }
-#gauge>div{
+#content__timeInformationDualGraphDisplayContentChartSpeedometer>div{
   
   top: 158px;
   left: 25px;
 }
-#doughnut{
+#content__timeInformationDualGraphDisplayContentPie{
   
     margin-right: 30px;
     width: 43%;
     height: 83%;
     margin-top: -3px;
 }
-#gauge > span:nth-child(2) {
+#content__timeInformationDualGraphDisplayContentChartSpeedometer > span:nth-child(2) {
   font-size: 38px;
   color: red;
   top: 70%;
@@ -1460,7 +1460,7 @@ z-index: 0;
   width: 90vw;
 }
 
-#doughnut {
+#content__timeInformationDualGraphDisplayContentPie {
   margin-right: 0px;
   width: 43%;
   height: 83%;
@@ -1520,16 +1520,16 @@ z-index: 0;
 .content__timeInformationDualGraphDisplay{
   top:582px
 }
-#gauge{
+#content__timeInformationDualGraphDisplayContentChartSpeedometer{
   height: 66%;
 }
-#gauge > span:nth-child(2) {
+#content__timeInformationDualGraphDisplayContentChartSpeedometer > span:nth-child(2) {
   font-size: 26px;
   color: red;
   top: 76%;
   
 }
-#doughnut {
+#content__timeInformationDualGraphDisplayContentPie {
   width: 47%;
   height: 69%;
   margin-top: -3px;
@@ -1539,22 +1539,22 @@ z-index: 0;
   top: 286px;
   height: 222px
 }
-#gauge {
+#content__timeInformationDualGraphDisplayContentChartSpeedometer {
   height: 85%;
 }
-#doughnut {
+#content__timeInformationDualGraphDisplayContentPie {
   height: 86%;
 }
-#doughnut > span:nth-child(2) {
+#content__timeInformationDualGraphDisplayContentPie > span:nth-child(2) {
   top: 62%;
   font-size: 24px;
 }
-#gauge > span:nth-child(2) {
+#content__timeInformationDualGraphDisplayContentChartSpeedometer > span:nth-child(2) {
   font-size: 26px;
   color: red;
   top: 73%;
 }
-#gauge > div {
+#content__timeInformationDualGraphDisplayContentChartSpeedometer > div {
   display: flex;
   flex-direction: column;
   color: white;
@@ -1564,7 +1564,7 @@ z-index: 0;
   min-width: 200px;
 }
 
-#gauge>div {
+#content__timeInformationDualGraphDisplayContentChartSpeedometer>div {
     top: 121px;
     left: 6px;
 }
