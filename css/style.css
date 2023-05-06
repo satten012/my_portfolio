@@ -349,22 +349,20 @@ a > .fa-file {
 .information__skillsHeaderSectionRight {
   height: 100%;
   width: 50%;
-
-  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-
-  line-height: 38px;
+  line-height: 35px;
   color: white;
   font-weight: 400;
   font-size: 14px;
   font-family: "Inter";
+  display: grid;
+    grid-template-columns: repeat(3, 69%);
 }
 
 .information__skillsHeaderSectionLeftSkillName,
 .information__skillsHeaderSectionRightSkillNema {
-  height: 19%;
   width: 100%;
 }
 #content__timeInformationEncodingTimeChartPerWeek{
@@ -711,6 +709,7 @@ transition-duration: 1.5s;
     flex-direction: column;
     padding-right: 10px;
   }
+
 
   #content__timeInformationDualGraphDisplayContentPie {
     width: 225px;
@@ -1389,8 +1388,63 @@ display: none;
 }
 
 @media screen and (max-width: 576px) {
+  .main{
+    height: 1979px;
+  }
   .content__portfolio {
     top: 1304;
+}
+
+.information__contact {
+  position: absolute;
+  left: 15px;
+  top: 373px;
+  width: 45%;
+}
+.information__skills {
+  position: absolute;
+  right: 32px;
+  top: 372px;
+  width: 45%;
+}
+.information__aboutDescriptionSecondPatagraph{
+  color: transparent;
+}
+.information__skillsHeaderSectionLeft,
+.information__skillsHeaderSectionRight {
+  height: 72%;
+  width: 50%;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  flex-direction: column;
+  line-height: 30px;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Inter";
+  display: grid;
+  grid-template-columns: repeat(2, 100%);
+}
+
+.information__skillsHeaderSectionLeftSkillName:nth-child(2n){
+
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.information__skillsHeaderSectionLeftSkillName>i{
+  margin-left: 5px;
+}
+.information__skillsHeaderSectionLeftSkillName{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.information__skills{
+  height: 21%;
 }
 
 .popup2{
@@ -1469,6 +1523,9 @@ z-index: 0;
 }
 
 .fa-brands, .fa-envelope, .fa-solid{
+  display: block !important;
+}
+.fa-regular, .fa-mobile-screen-button, .fa-telegram, .fa-linkedin, .fa-github {
   display: none !important;
 }
 .information__about{
@@ -1490,9 +1547,7 @@ z-index: 0;
 .content__portfolioProjects {
   max-width: 87vw!important;
 }
-.information__aboutDescriptionSecondPatagraph{
-  display: none;
-}
+
 }
 
 
@@ -1651,4 +1706,33 @@ z-index: 0;
 
 .github{
   text-decoration: none;
+}
+
+
+.show{
+  display: block;
+}
+
+.information__aboutDescriptionShowLetter .show {
+  visibility: visible !important;
+  -webkit-animation: fadeIn 1s !important;
+  animation: fadeIn 1s !important;
+}
+.information__aboutDescriptionShowLetter .information__aboutDescriptionShowLetterAllText {
+  visibility: hidden;
+  width: 800px;
+  height: min-content!important;
+  background-image: linear-gradient( to right top, #2c193e, #281b38, #251c31, #221d2a, #1f1d23 );
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 10 !important;
+  top: -1px;
+  left: -1px;
+  border: 2px solid rgb(252, 252, 252);
+  z-index: 11;
+  padding: 15px;
+  text-align: justify;
 }
