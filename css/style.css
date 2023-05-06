@@ -1635,3 +1635,20 @@ z-index: 0;
 .fa-check-double{
   color: #36bffa;
 }
+
+.content__portfolioProjectsContentInformationPizzaSprayTown > img{
+  width: 160px;
+  margin: auto;
+  margin-left: 69px;
+  margin-top: 15px;
+  border-radius: 24px;
+  height: 229px!important;
+}
+
+.content__portfolioProjectsContentInformationPizzaSprayTownTitle{
+  width: 298px!important;
+}
+
+.github{
+  text-decoration: none;
+}
