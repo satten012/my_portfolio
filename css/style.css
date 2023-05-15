@@ -12,11 +12,10 @@
   color: white;
   text-decoration: none;
 }
-/*100
-100*/
+
 .container {
-  max-width: 90vw; 
-  min-height: 90vh;
+  max-width: 100vw; 
+  min-height: 100vh;
   background: url(../img/Background.png);
   background-size: cover;
   display: flex;
@@ -161,7 +160,6 @@
 }
 
 .information__aboutDescription > a:hover {
-  color: red;
   text-decoration: none;
 }
 
@@ -637,14 +635,19 @@ transition-duration: 1.5s;
 }
 .resurses{
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 
-.link, .github{
-  color: darkgreen;
+.link, .fa-githubPortfolio, .github{
+  color: #36bffa;
   height: 50px;
-
+  padding: 0 15px;
+  cursor: pointer;
+}
+.fa-link, .fa-githubPortfolio{
+  color: #36bffa;
+  padding-left: 10px;
 }
 
 
@@ -657,8 +660,8 @@ transition-duration: 1.5s;
 .content__portfolioProjectsContentInformationTrello>span{
   color:white;
   text-align: justify;
-  height: 100px;
-  background-color: #36bffa;
+  font-size: 14px;
+  padding-left: 15px;
 }
 
 .content__portfolioTitle{
@@ -876,7 +879,6 @@ transition-duration: 1.5s;
   }
   #content__timeInformationDualGraphDisplayContentChartSpeedometer > span:nth-child(2) {
     font-size: 25px;
-    color: red;
     top: 74%;
   }
   .content__timeInformation{
@@ -1159,7 +1161,7 @@ transition-duration: 1.5s;
   background-color: transparent;
   width: 70px;
   height: 30px;
-  color: red;
+
 }
 
 option {
@@ -1377,15 +1379,16 @@ display: none;
 }
 #content__timeInformationDualGraphDisplayContentChartSpeedometer > span:nth-child(2) {
   font-size: 38px;
-  color: red;
+
   top: 70%;
 }
 .content__portfolioProjects {
   max-width: 87vw!important;
 }
-.fa-brands, .fa-envelope, .fa-solid, .fa-message{
+.fa-envelope, .fa-solid, .fa-message, #fa-githubBlock, .fa-linkedin, .fa-telegram{
   display: none !important;
 }
+
 
 }
 
@@ -1560,10 +1563,10 @@ z-index: 0;
   width: 100%;
 }
 
-.fa-brands, .fa-envelope, .fa-solid{
+ .fa-envelope, .fa-solid{
   display: block !important;
 }
-.fa-regular, .fa-mobile-screen-button, .fa-telegram, .fa-linkedin, .fa-github {
+.fa-regular, .fa-mobile-screen-button, .fa-telegram, .fa-linkedin,  #fa-githubBlock {
   display: none !important;
 }
 .information__about{
@@ -1586,13 +1589,19 @@ z-index: 0;
   max-width: 87vw!important;
 }
 
+.fa-circle-right,
+.fa-circle-left{
+  display: block !important;
 }
-
+.fa-file{
+  display: none !important;
+}
+}
 
 
 @media screen and (max-width: 414px) {
   .main{
-    height: 1690px;
+    height: 1800px;
   }
 
   .information__skills, .information__contact {
@@ -1618,7 +1627,7 @@ z-index: 0;
     position: absolute;
     width: 96vw;
     left: 0px;
-    top: 1112px;
+    top: 1220px;
     height: 526px;
     margin: 0;
     padding-top: 8px;
@@ -1629,7 +1638,7 @@ z-index: 0;
 
 .content__timeInformationEncodingTime{
   height: 222px;
-  top:29px;
+  top:192px;
 }
       
 .content__timeInformationDualGraphDisplay{
@@ -1640,7 +1649,6 @@ z-index: 0;
 }
 #content__timeInformationDualGraphDisplayContentChartSpeedometer > span:nth-child(2) {
   font-size: 26px;
-  color: red;
   top: 76%;
   
 }
@@ -1651,7 +1659,7 @@ z-index: 0;
   margin-right: 0;
 }
 .content__timeInformationDualGraphDisplay {
-  top: 286px;
+  top: 420px;
   height: 222px
 }
 #content__timeInformationDualGraphDisplayContentChartSpeedometer {
@@ -1666,7 +1674,6 @@ z-index: 0;
 }
 #content__timeInformationDualGraphDisplayContentChartSpeedometer > span:nth-child(2) {
   font-size: 26px;
-  color: red;
   top: 73%;
 }
 #content__timeInformationDualGraphDisplayContentChartSpeedometer > div {
@@ -1697,9 +1704,7 @@ z-index: 0;
   height: 197px !important;
 }
 
-.link{
-  color: red;
-}
+
 
 
 .fa-envelope, .fa-mobile-screen-button, .fa-linkedin, .information__contactSection > div > a > i, .fa-telegram {
