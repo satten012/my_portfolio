@@ -8,10 +8,6 @@
   width: 0;
 }
 
-.information__aboutResumeBlock >a{
-  color: white;
-  text-decoration: none;
-}
 
 .container {
   max-width: 100vw; 
@@ -21,16 +17,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center; 
-
 }
-.information__aboutDescriptionShowLetterText{
-  display: none !important;
-}
-
-.information__aboutDescriptionShowLetter{
-  color: wheat;
-}
-
 
 .main {
   margin: auto;
@@ -50,6 +37,20 @@
   flex-direction: column;
   margin-left: 10px;
 }
+
+.resurses > div > a {
+  text-decoration: none;
+  color:#36bffa
+}
+.information__aboutDescriptionShowLetterText{
+  display: none !important;
+}
+
+.information__aboutDescriptionShowLetter{
+  color: wheat;
+}
+
+
 
 .contnent {
   width: 75%;
@@ -100,6 +101,11 @@
   animation-duration: 2.5s;
   animation-delay: 30s;
   animation-fill-mode: both;
+}
+
+.information__aboutResumeBlock >a{
+  color: white;
+  text-decoration: none;
 }
 
 @keyframes hidePic {
@@ -639,15 +645,19 @@ transition-duration: 1.5s;
   align-items: center;
 }
 
-.link, .fa-githubPortfolio, .github{
+.link, .github{
   color: #36bffa;
   height: 50px;
   padding: 0 15px;
   cursor: pointer;
 }
-.fa-link, .fa-githubPortfolio{
+.fa-link, .fa-github{
   color: #36bffa;
   padding-left: 10px;
+}
+
+.git{
+  color:white
 }
 
 
@@ -700,6 +710,12 @@ transition-duration: 1.5s;
   font-size: 36px!important;
   color: #254bdd;
 }
+.gitPortfolio{
+  margin-left: 10px;
+}
+
+
+
 
 @media screen and (max-width: 1480px) {
   .container{
@@ -1192,16 +1208,23 @@ option {
   background-color: transparent;
 }
 
-.fa-brands,
-.fa-solid,
+#fa-githubPortfolio,
+.fa-square-js,
+.fa-bootstrap,
+.fa-css3-alt,
+.fa-html5,
+.fa-sass,
+
 .fa-envelope,
-.fa-html5 {
+.fa-html5,
+.fa-cloud {
   font-size: 16px !important;
 }
 
 .information__contactSection > div > a {
   color: white;
   text-decoration: none;
+  
 }
 #content__timeInformationDualGraphDisplayContentPie {
   position: relative;
@@ -1385,9 +1408,22 @@ display: none;
 .content__portfolioProjects {
   max-width: 87vw!important;
 }
-.fa-envelope, .fa-solid, .fa-message, #fa-githubBlock, .fa-linkedin, .fa-telegram{
+#fa-githubBlock,
+.fa-square-js,
+.fa-bootstrap,
+.fa-css3-alt,
+.fa-html5,
+.fa-sass,
+.fa-envelope,  .fa-message, .fa-google,
+.fa-telegram, .fa-linkedin, .git,.fa-cloud,
+.fa-mobile-screen-button,
+.fa-check-double{
   display: none !important;
 }
+.fa-file{
+  display: none !important;
+}
+
 
 
 }
@@ -1563,10 +1599,15 @@ z-index: 0;
   width: 100%;
 }
 
- .fa-envelope, .fa-solid{
+#fa-githubPortfolio,
+.fa-square-js,
+.fa-bootstrap,
+.fa-css3-alt,
+.fa-html5,.fa-mobile-screen-button,
+.fa-sass, .fa-envelope,  .fa-google,.fa-cloud,.fa-check-double{
   display: block !important;
 }
-.fa-regular, .fa-mobile-screen-button, .fa-telegram, .fa-linkedin,  #fa-githubBlock {
+.fa-regular, .fa-mobile-screen-button, .fa-telegram, .fa-linkedin {
   display: none !important;
 }
 .information__about{
@@ -1577,6 +1618,9 @@ z-index: 0;
 }
 .content__timeInformationDualGraphDisplay{
   width: 90vw;
+}
+.git, .fa-messageBlock{
+  display: block !important;
 }
 
 #content__timeInformationDualGraphDisplayContentPie {
@@ -1593,9 +1637,8 @@ z-index: 0;
 .fa-circle-left{
   display: block !important;
 }
-.fa-file{
-  display: none !important;
-}
+
+
 }
 
 
@@ -1707,11 +1750,17 @@ z-index: 0;
 
 
 
-.fa-envelope, .fa-mobile-screen-button, .fa-linkedin, .information__contactSection > div > a > i, .fa-telegram {
+.fa-githubBloc,.fa-envelope, .fa-mobile-screen-button, .fa-linkedin, .information__contactSection > div > a > i, .fa-telegram {
   font-style: italic !important;
   margin-right: 10px;
+  color:white
 
 }
+.fa-github{
+  padding-left: 0 !important;
+}
+
+
 
 .information__contactSection>div{
   font-style: italic !important; 
