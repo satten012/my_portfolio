@@ -42,13 +42,14 @@
   text-decoration: none;
   color:#36bffa
 }
-.information__aboutDescriptionShowLetterText{
-  display: none !important;
-}
-
 .information__aboutDescriptionShowLetter{
   color: wheat;
 }
+.information__aboutDescriptionShowLetterText{
+  color: transparent;
+}
+
+
 
 
 
@@ -263,9 +264,7 @@
   display: inline;
 }
 
-.popup2{
-  display: inline-block;
-}
+
 
 
 .information__aboutResume {
@@ -394,31 +393,24 @@ a > .fa-file {
   height: 76%;
   width: 93.5%;
   margin: auto;
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: flex-start !important;
+  display: flex ;
+  justify-content: space-between ;
+  align-items: flex-start ;
 }
 
 .content__portfolioTitle {
   height: 0%;
   width: 97%;
-
   margin: auto;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;*/
 }
 
 .content__portfolioProjects {
   height: 81%;
   width: 97%;
-
   margin: auto;
 }
-.popup2{
-  display: none;
-}
+
+
 
 .information__aboutDescription {
   color: white;
@@ -434,14 +426,14 @@ a > .fa-file {
 .information__aboutDescriptionShowLetter .information__aboutDescriptionShowLetterAllText {
   visibility: hidden;
   width: 800px;
-  height: min-content!important;
+  height: min-content;
   background-image: linear-gradient( to right top, #2c193e, #281b38, #251c31, #221d2a, #1f1d23 );
   color: #fff;
   text-align: left;
   border-radius: 6px;
   padding: 8px 0;
   position: absolute;
-  z-index: 10 !important;
+  z-index: 10 ;
   top: -1px;
   left: -1px;
   border: 2px solid rgb(252, 252, 252);
@@ -675,12 +667,12 @@ transition-duration: 1.5s;
 }
 
 .content__portfolioTitle{
-  max-width: 67vw!important;
+  max-width: 67vw;
 
 }
 
 .content__portfolioProjects{
-  max-width: 67vw!important;
+  max-width: 67vw;
   margin-top: 112px;
 
 }
@@ -695,7 +687,7 @@ transition-duration: 1.5s;
   margin: auto;
   right: 0px;
   z-index: 100;
-  font-size: 36px!important;
+  font-size: 36px;
   color: #254bdd;
 
 }
@@ -707,7 +699,7 @@ transition-duration: 1.5s;
   margin: auto;
   left: 0px;
   z-index: 9;
-  font-size: 36px!important;
+  font-size: 36px;
   color: #254bdd;
 }
 .gitPortfolio{
@@ -741,7 +733,7 @@ transition-duration: 1.5s;
     top: 64%;
   }
   #content__timeInformationDualGraphDisplayContentChartSpeedometer {
-    width: 40% !important;
+    width: 40%;
     height: 74%;
     position: relative;
   }
@@ -1488,8 +1480,6 @@ display: none;
 .information__skillsHeaderSectionRight {
   height: 74%;
   width: 50%;
-  /* justify-content: space-between; */
-  /* align-items: center; */
   flex-direction: column;
   line-height: 30px;
   color: white;
@@ -1521,9 +1511,7 @@ display: none;
   height: 21%;
 }
 
-.popup2{
-  display: inline-block;
-}
+
 .information__aboutDescriptionShowLetter{
   color: transparent;
 }
