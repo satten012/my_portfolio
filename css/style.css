@@ -11,7 +11,7 @@
 
 .container {
   max-width: 90vw; 
-  min-height: 100vh;
+  min-height: 90vh;
   background: url(../img/Background.png);
   background-size: cover;
   display: flex;
