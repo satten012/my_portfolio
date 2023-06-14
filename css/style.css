@@ -1403,6 +1403,15 @@ a>.fa-file {
       height: 21%
   }
 }
+.content__portfolioProjectsContentInformationMyPersonalityPortfolio > a > img{
+  width: 298px;
+  height: 290px;
+}
+
+.content__portfolioProjectsContentInformationTrelloTitle > a > img{
+  width: 298px;
+  height: 197px;
+}
 .trello {
   width: 298px;
   height: 197px !important
