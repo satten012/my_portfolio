@@ -110,7 +110,7 @@ const legendMargin = {
     const fitValue = chart.legend.fit;
     chart.legend.fit = function fit() {
       fitValue.bind(chart.legend)();
-      return (this.height = 00);
+      return (this.height = "00");
     };
   },
 };

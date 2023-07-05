@@ -501,7 +501,16 @@ a>.fa-file {
 }
 .content__portfolioProjectsContentInformationMyPersonalityPortfolioTitle, .content__portfolioProjectsContentInformationPizzaSprayTownTitle, .content__portfolioProjectsContentInformationPizzaTitle, .content__portfolioProjectsContentInformationTrelloTitle, .information__aboutResumeIcon {
   color: #36bffa;
-  text-align: center
+  text-align: center;
+
+  align-items: center;
+  color: #36bffa;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0px;
+  line-height: 24px;
+  height: 24px;
 }
 .github, .link {
   padding-left: 15px
@@ -524,10 +533,7 @@ a>.fa-file {
 .git {
   color: #fff
 }
-.content__portfolioProjectsContentInformationMyPersonalityPortfolio>div, 
-.content__portfolioProjectsContentInformationPizza>div, 
-.content__portfolioProjectsContentInformationPizzaSprayTown>div, 
-.content__portfolioProjectsContentInformationTrello>div {
+.portfolio_description {
   padding-right: 20px;
   color: #fff;
   text-align: justify;
@@ -536,6 +542,17 @@ a>.fa-file {
   font-style: oblique;
   margin-bottom: 6px;
 }
+/* .title{
+  text-align: center;
+  align-items: center;
+  color: #36bffa;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0px;
+  line-height: 24px;
+  height: 24px;
+} */
 .content__portfolioTitle {
   max-width: 67vw
 }
@@ -566,6 +583,11 @@ a>.fa-file {
   font-size: 36px;
   color: #254bdd
 }
+
+.porten{
+  width: 300px;
+}
+
 .gitPortfolio {
   margin-left: 10px
 }
